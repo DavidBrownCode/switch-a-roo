@@ -1,0 +1,28 @@
+<!Doctype HTML>
+<html>
+<head>
+<title>Switch-A-Roo</title>
+<meta name="author" content="David Aaron Brown, 414-331-9806">
+</head>
+
+<div id="click" onclick="showSwitch()" style="background-color:grey;color:green;height:130px;width:130px;font-size:1.5em;">Click!</div>
+<p id="showI"></p>
+<p id="showJ"></p>
+
+</body>
+
+<script>
+function showSwitch(){
+	var i = 0;
+	var j = 3;
+	for (i=0;i<3;i++){
+		for (j=3;j>0;i--){
+		document.getElementById('showI').innerHTML = i;
+		document.getElementById('showJ').innerHTML = j;
+		}
+	i = j;
+	}
+}
+</script>
+
+</html>
